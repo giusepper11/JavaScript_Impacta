@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 3</title>
+    <script>
+        onload = function () {
+            function calculo(id) {
+                var n = document.getElementById('n1');
+                if (id == 'mais') {
+                    n.value++
+                } else if (id == 'menos') {
+                    n.value--
+                }
+            }
+
+            document.getElementById('mais').onclick = function () {
+                calculo(this.id)
+            };
+            document.getElementById('menos').onclick = function () {
+                calculo(this.id)
+            }
+        };
+
+    </script>
+</head>
+<body>
+    <input type="button" id="mais" value="+" class="btn">
+    <input type="text" id="n1" value="0" size="2">
+    <input type="button" id="menos" value="-" class="btn">
+</body>
+</html>

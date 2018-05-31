@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparação</title>
+    <script>
+        var idade = 25;
+        var age = '25';
+        var quant = 25;
+        var idadeMae = 63;
+
+        console.log(idade == age); //não leva em cons o tipo do dado
+
+        console.log(idade === age);//identicas - mesmo valor e tipo de dados
+
+        console.log(idade === quant);//identicas - mesmo valor e tipo de dados
+
+
+        //diferente
+        console.log(idade != idadeMae);
+
+        //não identico
+        console.log(idade !== age);
+
+        //maior e menor
+        console.log(idadeMae > idadeMae);
+        console.log(idadeMae >= idade);
+        console.log(idadeMae <= idade);
+        console.log(idade < idadeMae);
+        console.log('----------------------------------');
+        //or || e and &&
+        console.log(idade == quant && quant < idadeMae);//true
+        console.log(idade == quant && quant > idadeMae);//false
+
+        console.log(idade == quant || quant < idadeMae);//true
+        console.log(idade < quant || quant > idadeMae);//false
+        console.log('----------------------------------');
+
+        //especiais
+        var retorno = (idade < idadeMae) ? ('Verdadeiro') : ('Falso');
+        console.log(retorno);
+
+        //typeof
+        console.log(typeof retorno);
+
+        //void
+        onload = function () {
+            document.getElementById('um').href = 'javascript:void(0)';
+            document.getElementById('dois').href = 'javascript:void(document.body.style.backgroundColor="blue")';
+            document.getElementById('botao').onclick = function () {
+                alert(this.id + ' '+ this.value);
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+    <p><a href="" id="um">Não faz nada</a></p>
+    <p><a href="" id="dois">Mudar cor para azul</a></p>
+    <input type="button" id="botao" value="Quem sou eu">
+</body>
+</html>

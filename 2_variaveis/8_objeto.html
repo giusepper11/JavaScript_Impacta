@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objeto</title>
+    <script>
+        //linguagem js é orientada a objetos
+        //Objeto generico - Object
+        //Objetos nativos da linguagem - Array, Regexp, Number, String
+        //Objetos criados pelo navegador
+        //Objetos criados criado pelo dev
+
+        //class aluno(nome,idade,curso){
+        function Aluno(nome, idade, curso) {
+            this.nome = nome;
+            this.idade = idade;
+            this.cursos = curso;
+        }
+
+        var aluno1 = new Aluno('Giusepe',26,'ADS');
+        var aluno2 = new Aluno('Debora',27,'MT');
+
+        console.log(aluno1);
+        console.log(aluno2);
+
+        aluno1.nome = 'Giuseppe';
+        console.log(aluno1);
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <div>Curso JavaScript</div>
+
+</body>
+</html>

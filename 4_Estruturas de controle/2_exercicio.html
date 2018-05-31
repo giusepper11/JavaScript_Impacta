@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 2</title>
+    <script>
+        d = document;
+        onload = function () {
+            document.getElementById('botao').onclick = function () {
+                var nome = d.getElementById('nome').value;
+                var tel = d.getElementById('tel').value;
+                var curso = d.getElementById('curso').value;
+                console.log(curso);
+                console.log(typeof curso);
+
+
+                if (nome === '' || tel === '' || curso === '0') {
+                    //alert('Preencha o cadastro');
+                    alert('Preencha os dados faltantes');
+                } else {
+                    //alert('Cadastro feito com sucesso');
+                    alert('Cadastro Realizado com sucesso');
+                    d.getElementById('contato').submit();
+                }
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Contato</h2>
+    <form method="post" action="https://www.impacta.com.br" id="contato">
+        <label for="nome">Nome <input type="text" name="nome" id="nome"/></label><br><br>
+        <label for="tel">Tel <input type="text" name="tel" id="tel"/></label><br><br>
+        <label for="curso">Cursos
+            <select name="curso" id="curso">
+                <option value="0">Selecione</option>
+                <option value="1">ADS</option>
+                <option value="2">BD</option>
+                <option value="3">SI</option>
+                <option value="4">PD</option>
+            </select>
+        </label>
+        <input type="button" id="botao" value="Enviar"/>
+    </form>
+</body>
+</html>
