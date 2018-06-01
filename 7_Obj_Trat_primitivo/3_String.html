@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+    <script>
+        var nome = new String('Impacta');
+        var sobrenome = new String('Tecnologia');
+
+        document.write(typeof nome);
+        document.write('<br>');
+        document.write(nome.valueOf());
+        document.write('<br>');
+        document.write(nome);
+        document.write('<br>');
+
+        document.write(nome.length);
+        document.write('<br>');
+        document.write(nome.indexOf('m'));
+        document.write('<br>');
+        document.write(nome.indexOf('pa'));
+        document.write('<br>');
+        document.write(nome.lastIndexOf('a'));
+        document.write('<br>');
+
+        var js = 'JavaScript não é legal';
+        var res = js.replace('não é', 'é muito');
+        document.write(res);
+        document.write('<br>');
+
+       // alert(nome.concat(' ', sobrenome));
+        var tudo = nome.concat(' ', sobrenome);
+
+        var t = tudo.split(' ');
+        //alert(t);
+
+        //metodos html para strings
+
+        var g = 'Java Script';
+        //alert(g.anchor('js'));
+        document.write(g.link('http://www.impacta.com.br'));
+
+        alert('\tEu não matei\n Joana D\'Arc');
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

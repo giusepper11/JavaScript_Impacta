@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGEX Métodos</title>
+    <script>
+        //1° maneira
+        var regexp1 = new RegExp("pre", 'i');
+        var string1 = 'Edu Pretel foi preferencialmente atendido na previa do filme';
+        // alert(regexp1.test(string1));
+        // alert(regexp1.exec(string1));
+
+        //2° maneira - sintaxe literal
+        var regexp2 = /Ro/ig;//g - retorna todas as ocorrencias
+        // i- ignora caixa alta ou baixa
+        var string2 = 'O Rato roeu a roupa do rei de Rosa';
+        //alert(string2.match(regexp2));
+
+        alert(string2.replace(/r[a-z]/ig, 'xy'))
+
+        //
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

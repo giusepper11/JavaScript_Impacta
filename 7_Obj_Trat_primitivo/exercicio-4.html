@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 4</title>
+    <script>
+        onload = function () {
+            document.getElementById('txt_cnpj').onkeypress = function () {
+                if (true) {
+                    console.log(this.value);
+                    console.log(typeof this.value);
+
+                    if (this.value.length == 2) this.value = this.value.concat('.');
+                    if (this.value.length == 6) this.value = this.value.concat('.');
+                    if (this.value.length == 10) this.value = this.value.concat('/');
+                    if (this.value.length == 15) this.value = this.value.concat('-');
+
+
+                }
+
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <p><input maxlength="18" type="text" name="txt_cnpj" id="txt_cnpj"/>00.000.000/0000-00</p>
+</body>
+</html>

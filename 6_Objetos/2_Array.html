@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <script>
+        var cores = new Array('vermelho', 'azul', 'amarelo', 'verde');
+        var cursos = ['php', 'java', 'mysql', 'html'];
+
+        document.write(cores);
+        document.write('<br>');
+        document.write(typeof cores);
+        document.write('<br>');
+        document.write(cores.length);
+        document.write('<br>');
+        document.write(cores[1]);
+        document.write('<br>');
+
+
+        for (i = 0; i < cores.length; i++) {
+            document.write(cores[i]);
+            document.write('<br>');
+
+        }
+        document.write('<hr>');
+        msg = '';
+
+        function ler(elemento, ind, obj) {
+            msg += 'array[' + ind + ']=' + elemento + '\n';
+        }
+
+        cores.forEach(ler);
+        //alert(msg)
+
+        cores.forEach((d, i) => {
+            document.write(i + ':' + d + '<br>');
+        });
+        document.write('<hr>');
+
+        //////////////////////////
+
+        document.write(cores);
+        document.write('<br>');
+        var pop1 = cores.pop();//remove e retorna ultimo item
+        document.write(cores);
+        document.write('<br>');
+        document.write(pop1);
+        document.write('<br>');
+        var pop2 = cores.shift();//remove e retorna 1° item
+        document.write(cores);
+        document.write('<br>');
+        document.write(pop2);
+        document.write('<br>');
+        document.write(cores.indexOf('amarelo'));
+        document.write('<br>');
+        cores.sort();
+        document.write(cores);
+        document.write('<br>');
+        cores.reverse();
+        document.write(cores);
+        document.write('<br>');
+        cores.push('cinza');
+        document.write(cores);
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

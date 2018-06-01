@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch</title>
+    <style type="text/css">
+        table {
+            width: 50%;
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        var parar = 20
+        var cont = 1;
+        while (cont <= 50) {
+            document.write(cont + ', ');
+            if (cont == parar) {
+                break
+            }
+            cont++
+        }document.write('<br><br>');
+        ///////////////////////////////////////////////////////////
+        var pular = 3;
+        var cont = 1;
+        while (cont <= 50) {
+
+            if (cont == pular) {
+                cont++
+                continue
+            }
+            document.write(cont + ', ');
+            cont++
+        }
+
+    </script>
+</head>
+<body>
+    <hr>
+</body>
+</html>

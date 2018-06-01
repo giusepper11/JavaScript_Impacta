@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch</title>
+    <style type="text/css">
+        table {
+            width: 50%;
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        var cont = 1;
+        while (cont <= 10) {
+            document.write(cont + ', ');
+            cont++
+        }
+        document.write('<hr>');
+        // multiplo de 3 entre 1 e 50
+        for (i = 1; i <= 60; i++) {
+
+            if (i % 3 == 0) {
+                document.write(i + ', ');
+            }
+        }
+
+        document.write('<hr>');
+        var achei = false;
+        var cont = 1;
+        while (achei == false) {
+            if (cont % 17 == 0 && cont % 19 == 0) {
+                document.write(cont + ', ');
+                break
+            }
+            cont++
+        }
+        document.write('<hr>');
+    </script>
+</head>
+<body>
+</body>
+</html>

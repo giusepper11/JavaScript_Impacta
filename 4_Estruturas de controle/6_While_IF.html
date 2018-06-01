@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch</title>
+    <script>
+        document.write('<table>');
+        var cont = 1;
+
+        while (cont <= 20) {
+            if (cont % 5 == 0) {
+                cor='red';
+
+            } else if (cont % 2 == 0) {
+                cor = '#CCC';
+            } else {
+                cor = '#FFF';
+            }
+            document.write('<tr><td style="background-color:' + cor + '">' + cont + '</td></tr>');
+            cont++
+        }
+        document.write('</table>');
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
